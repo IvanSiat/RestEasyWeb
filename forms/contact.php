@@ -4,7 +4,7 @@
   * The "PHP Email Form" library is available only in the pro version of the template
   * The library should be uploaded to: vendor/php-email-form/php-email-form.php
   * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+  
 
   // Replace contact@example.com with your real receiving email address
   $receiving_email_address = 'contact@example.com';
@@ -31,11 +31,31 @@
     'password' => 'pass',
     'port' => '587'
   );
-  */
+  
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
 
-  echo $contact->send();
+  echo $contact->send();*/
+
+
+
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $subject = $_POST['subject'];
+  $message = $_POST['message'];
+
+  $email_from = 'siativan@yahoo.com';
+
+	$email_subject = $subject;
+
+	$email_body = $message
+
+  $to = "siativan@yahoo.com";
+
+  $headers = "From: $email_from \r\n";
+
+
+  mail($to,$email_subject,$email_body,$headers);
 ?>

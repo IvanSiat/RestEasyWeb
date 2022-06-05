@@ -71,7 +71,12 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#hsservices">House Cleaning</a></li>
+              <li><a href="#mdservices">Mobile Detailing</a></li>
+            </ul>
+          </li>
           <li><a class="nav-link scrollto " href="#worksdone">Works Done</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <li><a class="getstarted scrollto" href="#services">Get Started</a></li>
@@ -108,7 +113,7 @@
               <h2 class="animate__animated animate__fadeInDown">Need a little spring cleaning?</h2>
               <p class="animate__animated animate__fadeInUp">RestEasy has got you with our professional house cleaning services!
               </p>
-              <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Services Offered</a>
+              <a href="#hsservices" class="btn-get-started animate__animated animate__fadeInUp scrollto">Services Offered</a>
             </div>
           </div>
         </div>
@@ -119,7 +124,7 @@
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Want your car to look brand new?</h2>
               <p class="animate__animated animate__fadeInUp">RestEasy's mobile auto detailing services has got you covered!</p>
-              <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Services Offered</a>
+              <a href="#mdservices" class="btn-get-started animate__animated animate__fadeInUp scrollto">Services Offered</a>
             </div>
           </div>
         </div>
@@ -211,7 +216,7 @@
 
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <section id="hsservices" class="services">
       <div class="container">
 
         <div class="section-title">
@@ -323,7 +328,7 @@
     </section><!-- End Cta Section -->
     
     <!-- ======= Auto Detailing Services Section ======= -->
-    <section id="services" class="services">
+    <section id="mdservices" class="services">
       <div class="container">
 
         <div class="section-title">
@@ -675,7 +680,7 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="forms/contact.php" method="post" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -741,7 +746,6 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
