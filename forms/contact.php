@@ -37,7 +37,7 @@
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
 
-  echo $contact->send();*/
+  echo $contact->send();
 
 
 
@@ -57,5 +57,23 @@
   $headers = "From: $email_from \r\n";
 
 
-  mail($to,$email_subject,$email_body,$headers);
+  mail($to,$email_subject,$email_body,$headers);*/
+
+  $sender = 'admin@resteasycleaningservices.ca';
+  $recipient = 'siati17@yahoo.com';
+  
+  $subject = "php mail test";
+  $message = "php test message";
+  $headers = 'From:' . $sender;
+  
+  if (mail($recipient, $subject, $message, $headers))
+  {
+      echo "Message accepted";
+  }
+  else
+  {
+      echo "Error: Message not accepted";
+  }
+  ?>
+  
 ?>
